@@ -19,7 +19,7 @@
       <tr>
         <td><%= wishlist.priority %></td>
         <td><%= wishlist.name %></td>
-        <td><%= wishlist.picture %></td>
+        <td><%= image_tag wishlist.picture_url, width: '100%' if wishlist.picture.present? %></td>
         <td><%= wishlist.description %></td>
         <td><%= wishlist.price %></td>
         <td><%= link_to 'Show', wishlist %></td>

@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e4e3e5-d446-4922-a0b9-9446dac80eff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/wishlists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/wishlists_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/wishlists_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/wishlist.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploaders/picture_uploader.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/_wishlist.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/wishlists/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/wishlists_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/wishlists.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/wishlist_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/wishlists_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/wishlists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/wishlists_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/wishlist.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/wishlist.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlists/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlists/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlists/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlists/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlists/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlists/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager" selected="Rails.Development: Project">
     <configuration name="Development: Project" type="RailsRunConfigurationType" factoryName="Rails">
@@ -155,8 +148,19 @@
       <updated>1612890985778</updated>
       <workItem from="1612890987287" duration="6056000" />
       <workItem from="1613573595876" duration="1991000" />
-      <workItem from="1613576416303" duration="2441000" />
+      <workItem from="1613576416303" duration="5014000" />
+      <workItem from="1614005575182" duration="115000" />
+      <workItem from="1614005747458" duration="600000" />
+      <workItem from="1615910963019" duration="4024000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit - just added scaffold of Wishlist">
+      <created>1613579121482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613579121482</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,5 +180,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial commit - just added scaffold of Wishlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit - just added scaffold of Wishlist" />
   </component>
 </project>

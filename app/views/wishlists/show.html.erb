@@ -12,7 +12,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @wishlist.picture %>
+  <%= image_tag(@wishlist.picture_url, width: 600) if @wishlist.picture.present? %>
 </p>
 
 <p>
@@ -25,5 +25,5 @@
   <%= @wishlist.price %>
 </p>
 
-<%= link_to 'Edit', edit_wishlist_path(@wishlist) %> |
-<%= link_to 'Back', wishlists_path %>
+<%= link_to 'Edit', edit_wishlist_path(@wishlist), class: 'links' %> |
+<%= link_to 'Back', wishlists_path, class: 'links' %>
