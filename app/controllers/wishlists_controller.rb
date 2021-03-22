@@ -2,9 +2,14 @@ class WishlistsController < ApplicationController
   before_action :set_wishlist, only: %i[show edit update destroy]
 
   # GET /wishlists or /wishlists.json
+  # GET /wishlist?order=[priority, name, price]
   def index
     @wishlists = Wishlist.all
 
+    if params[:order].in? %w[priority name price]
+      # adds order to scope
+      @wishlists.merge!( Wishlist.order("? DESC", params[:order]) )
+    end
     # show all students
     respond_to do |format|
       format.html # index.html.erb
@@ -27,7 +32,7 @@ class WishlistsController < ApplicationController
     @wishlist = Wishlist.new
 
     respond_to do |format|
-      format.html new.html.erb
+      format.html # new.html.erb
       format.json { render json: @wishlist }
     end
   end
@@ -43,7 +48,7 @@ class WishlistsController < ApplicationController
 
     respond_to do |format|
       if @wishlist.save
-        format.html { redirect_to @wishlist, notice: "Wishlist was successfully created." }
+        format.html { redirect_to @wishlist, notice: 'Wishlist was successfully created.' }
         format.json { render :show, status: :created, location: @wishlist }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -56,7 +61,7 @@ class WishlistsController < ApplicationController
   def update
     respond_to do |format|
       if @wishlist.update(wishlist_params)
-        format.html { redirect_to @wishlist, notice: "Wishlist was successfully updated." }
+        format.html { redirect_to @wishlist, notice: 'Wishlist was successfully updated.' }
         format.json { render :show, status: :ok, location: @wishlist }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -69,12 +74,13 @@ class WishlistsController < ApplicationController
   def destroy
     @wishlist.destroy
     respond_to do |format|
-      format.html { redirect_to wishlists_url, notice: "Wishlist was successfully destroyed." }
+      format.html { redirect_to wishlists_url, notice: 'Wishlist was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_wishlist
     @wishlist = Wishlist.find(params[:id])

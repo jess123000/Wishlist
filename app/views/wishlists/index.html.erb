@@ -16,15 +16,21 @@
 
   <tbody>
     <% @wishlists.each do |wishlist| %>
+    <p>Sort by:
+      <%= link_to "priority", wishlists_path(order: 'priority') %>
+      <%= link_to "name", wishlists_path(order: 'name') %>
+      <%= link_to "price", wishlists_path(order: 'price') %>
+
+    </p>
       <tr>
         <td><%= wishlist.priority %></td>
         <td><%= wishlist.name %></td>
         <td><%= image_tag wishlist.picture_url, width: '100%' if wishlist.picture.present? %></td>
         <td><%= wishlist.description %></td>
         <td><%= wishlist.price %></td>
-        <td><%= link_to 'Show', wishlist %></td>
-        <td><%= link_to 'Edit', edit_wishlist_path(wishlist) %></td>
-        <td><%= link_to 'Destroy', wishlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', wishlist, class: 'links'%></td>
+        <td><%= link_to 'Edit', edit_wishlist_path(wishlist), class: 'links' %></td>
+        <td><%= link_to 'Destroy', wishlist, method: :delete, data: { confirm: 'Are you sure?' }, class: 'links' %></td>
       </tr>
     <% end %>
   </tbody>
