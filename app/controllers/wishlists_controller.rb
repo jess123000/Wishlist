@@ -2,14 +2,9 @@ class WishlistsController < ApplicationController
   before_action :set_wishlist, only: %i[show edit update destroy]
 
   # GET /wishlists or /wishlists.json
-  # GET /wishlist?order=[priority, name, price]
   def index
     @wishlists = Wishlist.all
 
-    if params[:order].in? %w[priority name price]
-      # adds order to scope
-      @wishlists.merge!( Wishlist.order("? DESC", params[:order]) )
-    end
     # show all students
     respond_to do |format|
       format.html # index.html.erb

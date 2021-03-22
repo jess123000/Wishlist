@@ -47,7 +47,7 @@ li {
 }
 
 li a {
-    display: block;;
+    display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -81,8 +81,4 @@ li a:hover {
 
 .login:visited {
     color: #333333;
-}
-
-p:visited {
-    color: white;
 }

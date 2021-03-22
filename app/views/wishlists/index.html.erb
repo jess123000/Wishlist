@@ -17,9 +17,9 @@
   <tbody>
     <% @wishlists.each do |wishlist| %>
     <p>Sort by:
-      <%= link_to "priority", wishlists_path(order: 'priority') %>
-      <%= link_to "name", wishlists_path(order: 'name') %>
-      <%= link_to "price", wishlists_path(order: 'price') %>
+      <%= link_to "priority", wishlists_path(order: 'priority'), class: 'links' %>
+      <%= link_to "name", wishlists_path(order: 'name'), class: 'links' %>
+      <%= link_to "price", wishlists_path(order: 'price'), class: 'links' %>
 
     </p>
       <tr>
@@ -38,4 +38,4 @@
 
 <br>
 
-<%= link_to 'New Wishlist', new_wishlist_path %>
+<%= link_to 'New Wishlist', new_wishlist_path, class: 'links' %>
