@@ -4,37 +4,19 @@ class WishlistsController < ApplicationController
   # GET /wishlists or /wishlists.json
   def index
     @wishlists = Wishlist.all
-
-    # show all students
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @wishlists }
-    end
   end
 
   # GET /wishlists/1 or /wishlists/1.json
   def show
-    @wishlist = Wishlist.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @wishlist }
-    end
   end
 
   # GET /wishlists/new
   def new
     @wishlist = Wishlist.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @wishlist }
-    end
   end
 
   # GET /wishlists/1/edit
   def edit
-    @wishlist = Wishlist.find(params[:id])
   end
 
   # POST /wishlists or /wishlists.json

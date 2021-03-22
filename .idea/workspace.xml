@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e4e3e5-d446-4922-a0b9-9446dac80eff" name="Default Changelist" comment="Making wishlist display properly. Adding CSS. Adding home page.">
+      <change afterPath="$PROJECT_DIR$/public/uploads/tmp/1616429231-941498474124919-0002-1565/mic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/wishlist/picture/5/mic.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/wishlists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/wishlists_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlists/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlists/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlists/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlists/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/wishlist.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/wishlist.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +144,7 @@
       <workItem from="1614005747458" duration="600000" />
       <workItem from="1615910963019" duration="4730000" />
       <workItem from="1615932887588" duration="7324000" />
-      <workItem from="1616426415293" duration="1063000" />
+      <workItem from="1616426415293" duration="2644000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit - just added scaffold of Wishlist">
       <created>1613579121482</created>
